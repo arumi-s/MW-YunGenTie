@@ -18,7 +18,7 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'YunGenTie',
 	'version' => TIE_VERSION,
 	'author' => array( 'Arumi' ),
-	'url' => 'https://gentie.163.com/',
+	'url' => 'https://github.com/arumi-s/MW-YunGenTie',
 	'descriptionmsg' => 'yungentie-desc',
 );
 
@@ -31,7 +31,7 @@ $wgAPIModules['tie'] = 'ApiTie';
 $wgHooks['OutputPageBeforeHTML'][] = 'YunGenTie::autoAppend';
 
 $wgYunGenTieEnabled = true;
-$wgYunGenTieNamespaces = array();
+$wgYunGenTieNamespaces = array( NS_MAIN );
 $wgYunGenTieClassName = 'cloud-tie-wrapper';
 $wgYunGenTieProductKey = '';
 $wgYunGenTieLoaderKey = '';
